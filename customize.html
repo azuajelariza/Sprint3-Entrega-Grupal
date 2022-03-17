@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_customize.css">
+    <title>Personalización</title>
+</head>
+<body>
+    
+    <header>
+        <!-- Insertar componente header -->
+    </header>
+<main>
+    <div class="contenedor">
+
+		<!-- Tarjeta -->
+		<section class="tarjeta" id="tarjeta">
+			<div class="delantera">
+				<div class="logo-marca" id="logo-marca">
+				</div>
+				<div class="datos">
+					<div class="flexbox">
+						<div class="grupo" id="nombre">
+							<p class="label">Nombre Tarjeta</p>
+							<p class="nombre">Jhon Doe</p>
+						</div>
+
+						<div class="grupo" >
+							<p class="label">Cédula</p>
+							<p class="cedula"><span class="mes">Número</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="trasera">
+				<div class="datos">
+				</div>
+				<p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem.</p>
+                    <div class="grupo" id="numero">
+						<p class="label">Número Tarjeta</p>
+						<p class="numero">#### #### #### ####</p>
+					</div>
+				<a href="https://www.google.com/maps/dir///@4.6821816,-74.0530653,12z" class="link-banco">www.tubanco.com/planea-tu-viaje</a>
+			</div>
+		</section>
+
+		<!-- Contenedor Boton Abrir Formulario -->
+		<div class="contenedor-btn">
+			<button class="btn-abrir-formulario" id="btn-abrir-formulario">
+				<i class="fas fa-plus"></i>
+			</button>
+		</div>
+
+		<!-- Formulario -->
+		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+			<div class="grupo">
+				<label for="inputNumero">Número Tarjeta</label>
+				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+			</div>
+			<div class="grupo">
+				<label for="inputNombre">Nombre</label>
+				<input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+			</div>
+			<div class="grupo">
+				<label for="inputNumero">Cédula</label>
+				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+				</div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./customize.js"></script>
+</main>
+
+<footer>
+    <!-- insertar módulo footer -->
+</footer>
+
+</body>
+</html>
