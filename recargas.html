@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css/recargas.css">
+    <title>Recargas</title>
+</head>
+<body>
+
+    <div class="contenedor">
+    <header>
+
+    <h1>Formulario de Pago</h1><hr>
+    
+</header>
+
+    <main>
+    <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+        <div class="grupo">
+            <label for="inputNumero">Número Tarjeta</label>
+            <input type="text" id="inputNumero">
+        </div><br>
+        <div class="grupo">
+            <label for="inputRecarga">Monto a recargar</label>
+            <input type="text" id="inputRecarga">
+        </div><br>
+
+        
+                <label for="selectBank">Seleccione Banco / Metodo de pago</label>
+                    <div class="grupo-select">
+                        <select name="bc" id="selectBank">
+                            
+                            <option  selected>Bancolombia</option>
+                            <option  selected>Nequi</option>
+                            <option  selected>Banco de Bogota</option>
+                            <option  selected>Davivienda</option>
+                            <option  selected>BBVA</option>
+                            <option  selected>Banco de Occidente</option>
+                            <option  selected>Colpatria</option>
+                            <option  selected>Banco AV Villas</option>
+                            <option selected disabled value="Selecciona" >Selecciona...</option>
+                        </select>
+                        
+                    </div> <br>
+        </div>
+        <div class="btn">
+        <button type="submit" class="btn-pago" >Recargar</button>
+    </div>
+    </form>
+</main>
+</div>
+</body>
+</html>

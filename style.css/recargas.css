@@ -1,0 +1,59 @@
+@import url <"https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&display=swap">
+
+body {
+/*    width: 100%;*/
+
+}
+header {
+    margin: auto;
+    text-align: center;
+    font-family:'Amaranth', sans-serif;
+    color:rgb(40, 15, 131);
+}
+
+.formulario-tarjeta {
+	background: #fff;
+	width: 100%;
+	max-width: 700px;
+	padding: 50px 30px 30px 30px;
+	border-radius: 10px;
+    margin: auto;
+		
+}
+
+.formulario-tarjeta label {
+	display: block;
+	color: #7d8994;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-pago {
+	border: 2px solid #CED6E0;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	border-radius: 5px;
+}
+.btn {
+    text-align: center;
+}
+.btn-pago {
+    width: 30%;
+    margin: 0 auto;
+    align-items: center;
+	border: none;
+	padding: 10px;
+	font-size: 22px;
+	color: #fff;
+	background: #2364d2;
+	box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
+	cursor: pointer;
+}
+
+ .btn-pago:hover {
+	background: #1850b1;
+}
