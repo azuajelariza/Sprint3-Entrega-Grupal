@@ -1,0 +1,162 @@
+/* Estilos pára el NavBar*/
+
+nav {
+    position: relative;
+    margin: 1cm;
+    
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    /* font-size: 0; */
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: #1abc9c;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+
+nav a:nth-child(2){
+	width: 200px;
+}
+
+nav a:nth-child(2):hover~.animation{
+	width: 200px;
+	left: 100px;
+}
+
+nav a:nth-child(3){
+	width: 250px;
+}
+
+nav a:nth-child(3):hover~.animation{
+	width: 250px;
+	left: 300px;
+}
+
+nav a:nth-child(4){
+	width: 160px;
+}
+
+nav a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 560px;
+}
+
+nav a:nth-child(5){
+	width: 200px;
+}
+
+nav a:nth-child(5):hover~.animation{
+	width: 200px;
+	left: 710px;
+} 
+
+/* Stylos para el carrusel Daniel S*/
+.carrusel{
+    position: relative;
+    height: 300px;
+    width: 80%;
+    margin: 0 auto; 
+}
+
+.carrusel__track-container {
+    background: lightgreen;
+    
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+
+.carrusel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+    
+}
+
+.carrusel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carrusel__image {    
+    width: 50%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.pruebaboton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+.carrusel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+
+.carrusel__button--left {
+    right: 0px;
+}
+
+.carrusel__button--right {
+    
+    left: -10px;
+}
+
+.imgInicio {
+    width: 100px;
+    height: auto;
+}
+
+#flex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aqua;
+}
+
+#info2 {
+    margin-top: 3cm;
+}
+
+

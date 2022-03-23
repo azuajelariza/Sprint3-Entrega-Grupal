@@ -5,47 +5,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tu transmilenio</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
 
+    <section>
+        <div>
+            <div id="flex1">
+                <img class="imgInicio" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/TransMilenio_Logo.png"
+                    alt="Logo-transmi">
+
+                <h1>Bienvenido a tu portal</h1>
+
+                <img class="imgInicio"
+                    src="https://scotiabankfiles.azureedge.net/scotiabank-colombia/CodensaAssets/catalogue/images/promociones/sitp/transmilenio_160x160-02-1.png"
+                    alt="Transmi">
+            </div>
+        </div>
+    </section>
+
     <nav>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/TransMilenio_Logo.png" alt="Logo-transmi">
         <a href="index.html">Inicio</a>
         <a href="./recargas.html">Recarga tu tarjeta</a>
         <a href="./customize.html">Personaliza tu tarjeta</a>
         <a href="">Historial de viajes</a>
         <a href="planeatuviaje.html">Planea tu viaje</a>
-        <img src="https://scotiabankfiles.azureedge.net/scotiabank-colombia/CodensaAssets/catalogue/images/promociones/sitp/transmilenio_160x160-02-1.png" alt="Transmi">
+
+        <div class="animation start-home"></div>
+
     </nav>
     <main>
-        <h1>Bienvenido a Transmilenio</h1>
-        <p>
-            Ventajas de perzonalizar tu tarjeta:
-        <ul>
-            <li>Transbordos entre $0 y $200 en un periodo de 110 minutos desde la primera validación.
-            </li>
-            <li>Dos viajes a crédito que se renuevan al recargar la tarjeta.</li>
-            <li>Bloqueo de saldo en caso de robo o pérdida.
-                Tarifas diferenciales para personas mayores de 62 años.</li>
-            <li> Tarifas diferenciales para personas que figuren en el Sisbén. </li>
-            <li>Un subsidio mensual que se abona al saldo de la tarjeta si el usuario es una persona con discapacidad.
-            </li>
-        </ul>
-        </p>
-        <p>
-            Que mas beneficios digitales posees?
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        </p>
+
+        <div class="carrusel">
+
+
+            <div class="carrusel__track-container">
+
+                <ul class="carrusel__track">
+
+                    <li class="carrusel__slide current-slide">
+                        <button class="pruebaboton">
+                            <img class="carrusel__image" src="./img/bg-tarjeta/img1.jpg" alt="">
+                            <p>Ahorro en los transbordos</p>
+                        </button>
+                    </li>
+
+                    <li class="carrusel__slide">
+                        <button class="pruebaboton">
+                            <img class="carrusel__image" src="./img/bg-tarjeta/img2.jpg" alt="">
+                            <p>Credito para tus viajes si no tienes saldo.</p>
+                        </button>
+                    </li>
+
+                    <li class="carrusel__slide">
+                        <button class="pruebaboton">
+                            <img class="carrusel__image" src="./img/bg-tarjeta/img3.jpg" alt="">
+                            <p>Credito para tus viajes</p>
+                        </button>
+                    </li>
+
+    <button class="pruebaboton"></button>
+
+                    <li class="carrusel__slide"><img class="carrusel__image" src="./img/bg-tarjeta/img4.png" alt="">
+                    </li>
+                    <li class="carrusel__slide"><img class="carrusel__image" src="./img/bg-tarjeta/img5.png" alt="">
+                    </li>
+                    <li class="carrusel__slide"><img class="carrusel__image" src="./img/bg-tarjeta/img6.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carrusel__button carrusel__button--right">Atras</button>
+            <button class="carrusel__button carrusel__button--left">Adelante</button>
+            <!-- 
+            <div class="carrusel__nav">
+                <button class="carrusel__indicator"></button>
+                <button class="carrusel__indicator"></button>
+                <button class="carrusel__indicator"></button>
+                <button class="carrusel__indicator"></button>
+                <button class="carrusel__indicator"></button>
+                <button class="carrusel__indicator"></button>
+            </div> -->
+        </div>
+
+
+
+
+
+        <div id="info2">
+
+            <h1>Bienvenido a Transmilenio</h1>
+            <p>
+                Ventajas de perzonalizar tu tarjeta:
+            <ul>
+                <li>Transbordos entre $0 y $200 en un periodo de 110 minutos desde la primera validación.
+                </li>
+                <li>Dos viajes a crédito que se renuevan al recargar la tarjeta.</li>
+                <li>Bloqueo de saldo en caso de robo o pérdida.
+                    Tarifas diferenciales para personas mayores de 62 años.</li>
+                <li> Tarifas diferenciales para personas que figuren en el Sisbén. </li>
+                <li>Un subsidio mensual que se abona al saldo de la tarjeta si el usuario es una persona con
+                    discapacidad.
+                </li>
+            </ul>
+            </p>
+            <p>
+                Que mas beneficios digitales posees?
+            <ul>
+                <li>aaaaaaaaaaaaaaaaaa</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            </p>
+        </div>
     </main>
 
 </body>
+<script src="./script.js"></script>
 
 </html>
