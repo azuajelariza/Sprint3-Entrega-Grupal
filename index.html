@@ -11,88 +11,90 @@
 
 <style>
     nav {
-    position: relative;
-    margin: 1cm;
-    width: 1500px;
-    height: 50px;
-    left: 48%;
-    transform: translateX(-50%);
-    background-color: #34495e;
-    border-radius: 8px;
-    /* font-size: 0; */
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+        position: relative;
 
-}
+        margin-bottom: 100px;
+        width: 1500px;
+        height: 50px;
+        left: 48%;
+        transform: translateX(-50%);
+        background-color: #312e2e;
+        border-radius: 8px;
+        /* font-size: 0; */
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-nav a {
-    font-size: 15px;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    line-height: 50px;
-    /* position: relative; */
-    z-index: 1;
-    display: inline-block;
-    text-align: center;
-}
+    }
 
-nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    background: #1abc9c;
-    border-radius: 8px;
-    transition: all .5s ease 0s;
-}
+    nav a {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        line-height: 50px;
+        /* position: relative; */
+        z-index: 1;
+        display: inline-block;
+        text-align: center;
+    }
 
-nav a:nth-child(1) {
-    width: 100px;
-}
+    nav .animation {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 0;
+        background: #b9a704;
+        border-radius: 8px;
+        transition: all .5s ease 0s;
+    }
 
-nav .start-home, a:nth-child(1):hover~.animation {
-    width: 100px;
-    left: 295px;
-}
+    nav a:nth-child(1) {
+        width: 100px;
+    }
 
-nav a:nth-child(2) {
-    width: 200px;
-}
+    nav .start-home,
+    a:nth-child(1):hover~.animation {
+        width: 100px;
+        left: 295px;
+    }
 
-nav a:nth-child(2):hover~.animation {
-    width: 200px;
-    left: 395px;
-}
+    nav a:nth-child(2) {
+        width: 200px;
+    }
 
-nav a:nth-child(3) {
-    width: 250px;
-}
+    nav a:nth-child(2):hover~.animation {
+        width: 200px;
+        left: 395px;
+    }
 
-nav a:nth-child(3):hover~.animation {
-    width: 250px;
-    left: 595px;
-}
+    nav a:nth-child(3) {
+        width: 250px;
+    }
 
-nav a:nth-child(4) {
-    width: 160px;
-}
+    nav a:nth-child(3):hover~.animation {
+        width: 250px;
+        left: 595px;
+    }
 
-nav a:nth-child(4):hover~.animation {
-    width: 160px;
-    left: 845px;
-}
+    nav a:nth-child(4) {
+        width: 160px;
+    }
 
-nav a:nth-child(5) {
-    width: 200px;
-}
+    nav a:nth-child(4):hover~.animation {
+        width: 160px;
+        left: 845px;
+    }
 
-nav a:nth-child(5):hover~.animation {
-    width: 200px;
-    left: 1005px;
-}
+    nav a:nth-child(5) {
+        width: 200px;
+    }
+
+    nav a:nth-child(5):hover~.animation {
+        width: 200px;
+        left: 1005px;
+    }
 </style>
 
 <body>
@@ -113,11 +115,11 @@ nav a:nth-child(5):hover~.animation {
     </section>
 
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="./recargas.html">Recarga tu tarjeta</a>
-        <a href="./customize.html">Personaliza tu tarjeta</a>
-        <a href="./histviajes.html">Historial de viajes</a>
-        <a href="planeatuviaje.html">Planea tu viaje</a>
+        <a href="#">Inicio</a>
+        <a href="./pages/recargas.html">Recarga tu tarjeta</a>
+        <a href="./pages/customize.html">Personaliza tu tarjeta</a>
+        <a href="./pages/histviajes.html">Historial de viajes</a>
+        <a href="./pages/planeatuviaje.html">Planea tu viaje</a>
 
         <div class="animation start-home"></div>
 
@@ -132,35 +134,53 @@ nav a:nth-child(5):hover~.animation {
                 <ul class="carrusel__track">
 
                     <li class="carrusel__slide current-slide">
-                        <button class="pruebaboton">
+                        <button id="boton1" class="pruebaboton">
                             <img class="carrusel__image" src="./img/bg-tarjeta/img1.jpg" alt="">
-                            <p>Ahorro en los transbordos</p>
+                            <h1>Ahorro en los transbordos</h1>
                         </button>
                     </li>
 
                     <li class="carrusel__slide">
-                        <button class="pruebaboton">
+                        <button id="boton2" class="pruebaboton">
                             <img class="carrusel__image" src="./img/bg-tarjeta/img2.jpg" alt="">
-                            <p>Credito para tus viajes si no tienes saldo.</p>
+                            <h1>Credito para tus viajes si no tienes saldo.</h1>
                         </button>
                     </li>
 
                     <li class="carrusel__slide">
-                        <button class="pruebaboton">
+                        <button id="boton3" class="pruebaboton">
                             <img class="carrusel__image" src="./img/bg-tarjeta/img3.jpg" alt="">
-                            <p>Credito para tus viajes</p>
+                            <h1>Bloqueo de slado y tarjeta</h1>
                         </button>
                     </li>
 
-    <button class="pruebaboton"></button>
+                    <li class="carrusel__slide">
+                        <button id="boton4" class="pruebaboton">
+                            <img class="carrusel__image" src="./img/bg-tarjeta/img4.png" alt="">
+                            <h1>Tarifas preferenciales</h1>
+                        </button>
+                    </li>
 
-                    <li class="carrusel__slide"><img class="carrusel__image" src="./img/bg-tarjeta/img4.png" alt="">
+                    <li class="carrusel__slide">
+                        <button id="boton5" class="pruebaboton">
+                            <img class="carrusel__image" src="./img/bg-tarjeta/img5.jpg" alt="">
+                            <h1>Planifica tu ruta</h1>
+                        </button>
                     </li>
-                    <li class="carrusel__slide"><img class="carrusel__image" src="./img/bg-tarjeta/img5.png" alt="">
+
+                    <li class="carrusel__slide">
+                        <button id="boton6" class="pruebaboton">
+                            <img class="carrusel__image" src="./img/bg-tarjeta/img6.png" alt="">
+                            <h1>Recargas oline</h1>
+                        </button>
                     </li>
-                    <li class="carrusel__slide"><img class="carrusel__image" src="./img/bg-tarjeta/img6.jpg" alt="">
-                    </li>
+
                 </ul>
+            </div>
+
+            <div id="extraInfo">
+
+
             </div>
 
             <button class="carrusel__button carrusel__button--right">&#8249;</button>
@@ -181,36 +201,33 @@ nav a:nth-child(5):hover~.animation {
 
 
         <div id="info2">
+            <div id="parrafo1">
+                <h2>Bienvenido a la pagina de Transmilenio</h2>
+            </div>
+            <div id="parrafo1_0">
+                TransMilenio es un sistema de transporte de tipo BRT, que hace parte del sistema de transporte masivo de
+                Bogotá y Soacha cuya entidad gestora es la Empresa de Transporte del Tercer Milenio S. A.. Su
+                construcción se inició en 1998 y fue inaugurado el 4 de diciembre de 2000. Entró en operación el 18 del
+                mismo mes con las troncales (líneas) de la avenida Caracas (hasta la avenida de los Comuneros) y la
+                calle 80.4​5​ Desde entonces se han abierto nuevas troncales. Forma parte del SITP, junto con los
+                servicios urbano, complementario y especial, que circulan por los barrios y vías principales de la
+                ciudad.
+            </div>
+        </div>
 
-            <h1>Bienvenido a Transmilenio</h1>
-            <p>
-                Ventajas de perzonalizar tu tarjeta:
-            <ul>
-                <li>Transbordos entre $0 y $200 en un periodo de 110 minutos desde la primera validación.
-                </li>
-                <li>Dos viajes a crédito que se renuevan al recargar la tarjeta.</li>
-                <li>Bloqueo de saldo en caso de robo o pérdida.
-                    Tarifas diferenciales para personas mayores de 62 años.</li>
-                <li> Tarifas diferenciales para personas que figuren en el Sisbén. </li>
-                <li>Un subsidio mensual que se abona al saldo de la tarjeta si el usuario es una persona con
-                    discapacidad.
-                </li>
-            </ul>
-            </p>
-            <p>
-                Que mas beneficios digitales posees?
-            <ul>
-                <li>aaaaaaaaaaaaaaaaaa</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            </p>
+        <div id="info3">
+            <div id="parrafo2">
+                h
+            </div>
+                <div id="parrafo2_0">
+
+                </div>
+
+            
         </div>
     </main>
 
 </body>
-<script src="./script.js"></script>
+<script src="./scripts/script.js"></script>
 
 </html>
