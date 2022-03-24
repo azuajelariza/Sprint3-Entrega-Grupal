@@ -134,9 +134,25 @@ body {
 
 #parrafo1_0 {
     font-size: large;
-    width: ;
+    
     background-color: #312e2e;
     color: white;
     margin: 1%;
     padding: 1%;
+}
+
+/* ///// Planea tu viaje /////// */
+
+#notengomascreatividad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-15%);
+}
+
+#map {
+    width: auto;
+    
 }

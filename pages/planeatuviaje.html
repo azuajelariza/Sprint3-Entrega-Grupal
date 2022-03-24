@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,88 +10,89 @@
 </head>
 <style>
     nav {
-    position: relative;
-    margin: 1cm;
-    width: 1500px;
-    height: 50px;
-    left: 48%;
-    transform: translateX(-50%);
-    background-color: #34495e;
-    border-radius: 8px;
-    /* font-size: 0; */
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+        position: relative;
+        margin: 1cm;
+        width: 1500px;
+        height: 50px;
+        left: 48%;
+        transform: translateX(-50%);
+        background-color: #34495e;
+        border-radius: 8px;
+        /* font-size: 0; */
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-}
+    }
 
-nav a {
-    font-size: 15px;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    line-height: 50px;
-    /* position: relative; */
-    z-index: 1;
-    display: inline-block;
-    text-align: center;
-}
+    nav a {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        line-height: 50px;
+        /* position: relative; */
+        z-index: 1;
+        display: inline-block;
+        text-align: center;
+    }
 
-nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    background: #1abc9c;
-    border-radius: 8px;
-    transition: all .5s ease 0s;
-}
+    nav .animation {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 0;
+        background: #1abc9c;
+        border-radius: 8px;
+        transition: all .5s ease 0s;
+    }
 
-nav a:nth-child(1) {
-    width: 100px;
-}
+    nav a:nth-child(1) {
+        width: 100px;
+    }
 
-nav a:nth-child(1):hover~.animation {
-    width: 100px;
-    left: 295px;
-}
+    nav a:nth-child(1):hover~.animation {
+        width: 100px;
+        left: 295px;
+    }
 
-nav a:nth-child(2) {
-    width: 200px;
-}
+    nav a:nth-child(2) {
+        width: 200px;
+    }
 
-nav a:nth-child(2):hover~.animation {
-    width: 200px;
-    left: 395px;
-}
+    nav a:nth-child(2):hover~.animation {
+        width: 200px;
+        left: 395px;
+    }
 
-nav a:nth-child(3) {
-    width: 250px;
-}
+    nav a:nth-child(3) {
+        width: 250px;
+    }
 
-nav a:nth-child(3):hover~.animation {
-    width: 250px;
-    left: 595px;
-}
+    nav a:nth-child(3):hover~.animation {
+        width: 250px;
+        left: 595px;
+    }
 
-nav a:nth-child(4) {
-    width: 160px;
-}
+    nav a:nth-child(4) {
+        width: 160px;
+    }
 
-nav a:nth-child(4):hover~.animation {
-    width: 160px;
-    left: 845px;
-}
+    nav a:nth-child(4):hover~.animation {
+        width: 160px;
+        left: 845px;
+    }
 
-nav a:nth-child(5) {
-    width: 200px;
-}
+    nav a:nth-child(5) {
+        width: 200px;
+    }
 
-nav .start-home, a:nth-child(5):hover~.animation {
-    width: 200px;
-    left: 1005px;
-}
+    nav .start-home,
+    a:nth-child(5):hover~.animation {
+        width: 200px;
+        left: 1005px;
+    }
 </style>
 
 <body>
@@ -98,8 +100,9 @@ nav .start-home, a:nth-child(5):hover~.animation {
     <section>
         <div>
             <div id="flex1">
-                <a href="../index.html"><img  href="../index.html" Inicio id="imgLogo" src="https://upload.wikimedia.org/wikipedia/commons/8/8e/TransMilenio_Logo.png"
-                    alt="Logo-transmi"></a>
+                <a href="../index.html"><img href="../index.html" Inicio id="imgLogo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/8/8e/TransMilenio_Logo.png"
+                        alt="Logo-transmi"></a>
 
                 <h1>Bienvenido a tu portal</h1>
 
@@ -122,12 +125,23 @@ nav .start-home, a:nth-child(5):hover~.animation {
     </nav>
 
     <main>
+        <div id="notengomascreatividad">
+            <div>
 
-        <h2></h2>
-        
-        <a href="https://www.google.com/maps/dir///@4.6821816,-74.0530653,12z">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31812.02281343984!2d-74.11675166940546!3d4.682309916175617!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9cb6430f8607%3A0x8eea5954ef14af30!2sEl%20Dorado%20International%20Airport%20Luis%20Carlos%20Gal%C3%A1n%20Sarmiento%20(BOG)!5e0!3m2!1sen!2sco!4v1648098750816!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    <br> Click me</a>
+                <h2>Mapa Planeacion Viaje</h2>
+            </div>
+            <div id="map">
+                <a href="https://www.google.com/maps/dir///@4.6821816,-74.0530653,12z">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31812.02281343984!2d-74.11675166940546!3d4.682309916175617!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9cb6430f8607%3A0x8eea5954ef14af30!2sEl%20Dorado%20International%20Airport%20Luis%20Carlos%20Gal%C3%A1n%20Sarmiento%20(BOG)!5e0!3m2!1sen!2sco!4v1648098750816!5m2!1sen!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <br>
+                    <p> Planea tu viaje </p>
+                </a>
+            </div>
+        </div>
+        </div>
     </main>
 </body>
+
 </html>
