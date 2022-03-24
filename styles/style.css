@@ -1,81 +1,30 @@
-/* Estilos pára el NavBar*/
-
-nav {
-    position: relative;
-    margin: 1cm;
+body {
     
-    height: 50px;
-    background-color: #34495e;
-    border-radius: 8px;
-    /* font-size: 0; */
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+/* Estilos pára el heading bar*/
+
+#imgLogo {
+    width: 80px;
+    height: 60px;
 }
 
-nav a {
-    font-size: 15px;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    line-height: 50px;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    text-align: center;
+#imgBus {
+    width: 190px;
+    height: 60px;
 }
 
-nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    background: #1abc9c;
-    border-radius: 8px;
-    transition: all .5s ease 0s;
+#flex1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aqua;
 }
 
-nav a:nth-child(1){
-	width: 100px;
-}
-nav .start-home, a:nth-child(1):hover~.animation{
-	width: 100px;
-	left: 0;
+#info2 {
+    margin-top: 3cm;
 }
 
-nav a:nth-child(2){
-	width: 200px;
-}
 
-nav a:nth-child(2):hover~.animation{
-	width: 200px;
-	left: 100px;
-}
-
-nav a:nth-child(3){
-	width: 250px;
-}
-
-nav a:nth-child(3):hover~.animation{
-	width: 250px;
-	left: 300px;
-}
-
-nav a:nth-child(4){
-	width: 160px;
-}
-
-nav a:nth-child(4):hover~.animation{
-	width: 160px;
-	left: 560px;
-}
-
-nav a:nth-child(5){
-	width: 200px;
-}
-
-nav a:nth-child(5):hover~.animation{
-	width: 200px;
-	left: 710px;
-} 
 
 /* Stylos para el carrusel Daniel S*/
 .carrusel{
@@ -86,7 +35,7 @@ nav a:nth-child(5):hover~.animation{
 }
 
 .carrusel__track-container {
-    background: lightgreen;
+    background: #FFE400;
     
     height: 100%;
     width: 100%;
@@ -129,34 +78,21 @@ nav a:nth-child(5):hover~.animation{
 }
 
 .carrusel__button {
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);    
 }
 
 .carrusel__button--left {
-    right: 0px;
+    right: -30px;
 }
 
 .carrusel__button--right {
     
-    left: -10px;
-}
-
-.imgInicio {
-    width: 100px;
-    height: auto;
-}
-
-#flex1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: aqua;
-}
-
-#info2 {
-    margin-top: 3cm;
+    left: -30px;
 }
 
 
